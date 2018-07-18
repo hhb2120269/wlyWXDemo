@@ -1,0 +1,57 @@
+<import src='../../components/myradio/myradio.wxml' />
+<!--pages/check.wxml-->
+<view class='container '>
+  <view class='diveline'></view>
+  <view class='cell is_free'>
+    <view class='title'>性别:</view>
+    <template is='myradio' data="{{radios:sexType,kind:'sexType'}}" />
+  </view>
+  <view class='item picture'>
+
+    <view class='emptyadd' bindtap='showpictures'></view>
+    <view class='tagtitle addpic' bindtap='showpictures'>添加相关图片
+      <image src="{{showPictures ? '../../resource/images/ones/arrow_up.png' : '../../resource/images/ones/arrow_down.png'}}" mode="aspectFit" />
+    </view>
+    <view class='pictures'>
+      <block wx:for='{{pictures}}' wx:for-item='picture' wx:key='*this'>
+        <view class='img'>
+          <image src="{{picture}}" mode="aspectFill"></image>
+          <icon type="clear" size="18" color="#333333" bindtap="deletePicture" data-id="{{index}}"></icon>
+        </view>
+      </block>
+      <view class='addpicture' bindtap='addpicture'>
+        <view class='verlien'></view>
+        <view class='holline'></view>
+      </view>
+    </view>
+    <!-- cell1 -->
+    <view class='cell item'>
+      <view class='title'>竞彩赔率：</view>
+      <input placeholder="两比赛赔率≥1.8" maxlength="10" placeholder-class="placeholder" class='input' type="text" bindinput='oddsInput' />
+    </view>
+    <!-- cell2 -->
+    <view class='cell item'>
+      <view class='title'>竞彩赔率：</view>
+      <input placeholder="两比赛赔率≥1.8" maxlength="10" placeholder-class="placeholder" class='input' type="text" bindinput='oddsInput' />
+    </view>
+    <!-- cell3 -->
+    <view class="cell">
+      <view class='title'>比赛时间：</view>
+      <input placeholder="" maxlength="20" placeholder-class="placeholder" class='input' type="text" bindinput='bindMoneyInput' disabled='false' bindtap='clickTime' value="{{clickTime}}" />
+    </view>
+  </view>
+
+
+
+
+  <view class='btns'>
+    <button class='submit' hover-class="press_sub" bindtap="submit">发表文章</button>
+    <!-- <button class='save' bindtap="savetemp" wx:if=''>暂时保存</button> -->
+  </view>
+
+</view>
+
+
+
+
+<include src="../../components/pickertime/pickertime.wxml" />

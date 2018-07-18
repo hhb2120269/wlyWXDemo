@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/main/main",
+    "pages/list/list",
+    "pages/check/check"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#eb4f38",
+    "navigationBarTitleText": "猴赛雷",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#eb4f38",
+    "backgroundColor": "#ffffff",
+    "color": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "resource/images/item_show.png",
+        "selectedIconPath": "resource/images/item_show_selected.png"
+      },
+      {
+        "pagePath": "pages/main/main",
+        "text": "消息",
+        "iconPath": "resource/images/item_msg.png",
+        "selectedIconPath": "resource/images/item_msg_selected.png"
+      },
+      {
+        "pagePath": "pages/check/check",
+        "text": "作业",
+        "iconPath": "resource/images/item_train.png",
+        "selectedIconPath": "resource/images/item_train_selected.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "用户",
+        "iconPath": "resource/images/item_person.png",
+        "selectedIconPath": "resource/images/item_person_selected.png"
+      }
+    ]
+  }
+}

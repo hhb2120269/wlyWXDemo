@@ -1,0 +1,31 @@
+.list-content{
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+}
+.list-inputview{
+  display: flex;
+  background: green;
+  width: 100%;
+  padding:0px;
+  margin:4px 4px 0px 4px;
+  border-radius: 18rpx;
+  /* vertical-align: middle */
+}
+.input-avart{
+  height: 40px;
+  width: 40px;
+  background: orange
+}
+.list-input{
+  border:1px solid lightgray;
+  width: 100%;
+  line-height: 44px;
+  background: pink;
+}
+.input-btn{
+  padding: 4px;
+  width: 40px;
+  height: 40px;
+  font-size: 15sp;
+}
